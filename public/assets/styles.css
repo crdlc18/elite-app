@@ -1,0 +1,163 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;   
+}
+body{
+    background: linear-gradient(70deg, rgba(86, 130, 3, 1) 0%, rgba(31, 48, 0, 1) 35%, rgba(144, 160, 52, 1) 100%);
+    font-family: "Merriweather ", sans-serif;
+    height:100vh;
+    background-attachment: fixed; 
+}
+
+/*----------------LOGIN AND REGISTRATION CSS-------------*/
+form{
+    width:40%;
+    background-color:white;
+    padding:50px;
+    border-radius:20px;
+    margin-top:150px;
+}
+.btn-primary{
+    width:100%;
+    border:none;
+    border-radius:50px;
+    margin-bottom:20px;
+    background: linear-gradient(90deg, rgba(86, 130, 3, 1) 0%, rgba(110, 145, 25, 1) 35%, rgba(144, 160, 52, 1) 100%);
+}
+.form-control{
+    color:rgba(0,0,0,.87);
+    border-bottom-color:rgba(0,0,0,.42);
+    box-shadow:none !important;
+    border:none;
+    border-bottom: 1px solid;
+    border-radius:4px 4px 0 0;
+}
+h4{
+    font-size:2rem !important;
+    font-weight:700;
+}
+.form-label{
+    font-family: 800 !important;
+}
+
+a{
+    color:rgba(0,0,0,.87);
+}
+
+.navCon{
+    background-color:#ffff;
+    margin:0;
+    padding: 10px;
+    border:none;
+    font-family:'Merriweather Sans', 'sans-serif';
+}
+.dropdown-bg{
+    background-color:rgba(86, 130, 3, 1) ;
+}
+@media only screen and (max-width: 600px){
+    form{
+        width: 100% !important;
+    }
+}
+
+/*---------------DASHBOARD-------------*/
+  
+  .longbox,.shortbox {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:#ddd;
+    border-radius:20px;
+  }
+
+  .longbox{
+    height:600px;
+  }
+
+  .list{
+    height:90%;
+    overflow-y:auto;
+    padding-right:20px;
+    margin-top:10px;
+  }
+
+  .shortbox{
+    height:290px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .dashCon{
+    margin:50px;
+    height: 80%;
+  }
+
+.dashUl {
+    list-style: none; 
+}
+
+.dashUl li, .longbox h5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    text-align: right;
+}
+
+#topArtistImg{
+    height:100px;
+    padding:5px;
+    
+}
+
+#dashform {
+    width: 100%;
+    padding-top:20px;
+    margin:0;
+    height:50px;
+}
+
+/* Center the form elements */
+#dashform input[type="text"],
+#dashform button {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#dashform button {
+    border: none; 
+    border-radius: 10px; 
+    background-color: #45a049; 
+    color: white;
+    cursor: pointer; 
+    width: 80px;
+}
+
+.shortlist{
+    overflow-y:auto;
+    padding-right:20px;
+    margin-top:10px;
+    background:white;
+    padding:2px;
+    text-align:left;
+    align-items:left;
+}
+
+
+#albumImg{
+    height:30px;
+    padding:0;
+    margin:0;
+    width:auto;
+}
+
+.shortlist ul{
+    list-style:none;
+    padding:2px;
+}
+
+.shortlist li{
+    padding:3px;
+}
