@@ -10,7 +10,7 @@
         </li>
         @auth
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Artist</a>
+              <a class="nav-link active" aria-current="page" href="{{route('artist.index')}}">Artist</a>
             </li>
 
             <li class="nav-item">

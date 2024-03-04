@@ -24,11 +24,8 @@ class ArtistAlbumSeeder extends Seeder
             $headers = fgetcsv($handle); // Get headers
             while (($data = fgetcsv($handle)) !== false) {
                 $rowData = array_combine($headers, $data);
-
-                
                 // Check if artist already exists in the database
                 $artist = Artist::where('name', $rowData['Artist'])->first();
-
                 if (!$artist) {
                     // Artist does not exist, create a new one
                     $artist = Artist::create([
@@ -36,7 +33,6 @@ class ArtistAlbumSeeder extends Seeder
                         'name' => $rowData['Artist'],
                     ]);
                 }
-
                 // Album data
                 $album = Album::create([
                     'year' => $rowData['Date Released'],
@@ -47,7 +43,6 @@ class ArtistAlbumSeeder extends Seeder
 
                 $album->artist()->associate($artist)->save();
             }
-
             fclose($handle);
         }
     }

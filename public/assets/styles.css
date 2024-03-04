@@ -161,3 +161,82 @@ a{
 .shortlist li{
     padding:3px;
 }
+
+/*--------------------ARTIST PAGE-----------------*/
+.artist-topcon{
+    padding:2rem;
+    
+}
+
+.addBtn{
+    width:50%;
+    margin-left:20px;
+}
+
+.artist-card .card-body {
+    display: none;
+    background-color: #ddd; /* Set card body background color to white */
+  }
+
+.artist-card .card-header{
+    cursor: pointer;
+}
+
+.artist-card .card-body{
+    display: none;
+}
+
+.collapse-toggle {
+    display: none;
+}
+
+/* Hide the checkbox */
+.collapse-toggle + .artist-card .card-body {
+    display: none;
+}
+
+/* Show card body when checkbox is checked */
+.collapse-toggle:checked + .artist-card .card-body {
+    display: block;
+}
+
+.artist-card .card-header h5{
+    display:flex;
+    justify-content: space-between;
+}
+.artist-card .right{
+    text-align: right;
+    font-weight: 350;
+    font-size:1rem;
+    margin-top:3px;
+}
+
+.artist-card .card-header p{
+    display:flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.custom-modal .modal-footer .btn {
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+.custom-modal .modal-dialog {
+    max-width: 400px;
+    max-height:300px;
+}
+
+.custom-modal .modal-content{
+    width:100%;
+}
+
+
+.custom-modal .modal-body{
+    padding:1rem;
+}
+
+.custom-modal .form-control{
+    width:200px;
+}

@@ -22,7 +22,7 @@
                 <div class="list">
                     <ul class="dashUl">
                         @foreach ($salesPerArtist as $sales)
-                            <li>{{ $sales->name }} <span class="right">{{ $sales->albums_sum_sales }}</span></li>
+                            <li>{{ $sales->name }} <span class="right">{{ number_format($sales->albums_sum_sales, 0, '.', ',') }}</span></li>
                         @endforeach
                     </ul>
                 </div>
